@@ -1,0 +1,11 @@
+title: "My Portfolio"
+description: "Personal portfolio with projects, blogs, and events."
+author: "Nimu Kimani"
+theme: minima
+
+# Collections
+collections:
+  events:
+    output: true
+  projects:
+    output: true
