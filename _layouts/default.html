@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | My Portfolio</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <nav>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/about' | relative_url }}">About Me</a>
-    <a href="{{ '/projects' | relative_url }}">Projects</a>
-    <a href="{{ '/events' | relative_url }}">Events</a>
-    <a href="{{ '/blog' | relative_url }}">Blog</a>
-  </nav>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/projects">Projects</a>
+      <a href="/blogs">Blogs</a>
+      <a href="/events">Events</a>
+    </nav>
+  </header>
+
   <main>
     {{ content }}
   </main>
+
   <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.author }}</p>
+    <p>© {{ site.time | date: "%Y" }} Wairimu | Built with ❤️ on GitHub Pages</p>
   </footer>
 </body>
 </html>
